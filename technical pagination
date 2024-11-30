@@ -11,7 +11,7 @@ if (!defined('ABSPATH')) {
     exit; // Exit if accessed directly
 }
 
-$zappit_auth_token = "eyJhbGciOiJSUzI1NiIsImtpZCI6IjNmZDA3MmRmYTM4MDU2NzlmMTZmZTQxNzM4YzJhM2FkM2Y5MGIyMTQiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiQiBUcmFjayIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NKUmJ2b05OWGd6dWVmSU81VE13V2ptUjUwa1V0SWFObWtzT1k3OGVlN3U4RHRRVDR3PXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL29uZWxpbmstZGV2ZWxvcGVyIiwiYXVkIjoib25lbGluay1kZXZlbG9wZXIiLCJhdXRoX3RpbWUiOjE3MzI0MzI3NDAsInVzZXJfaWQiOiJqOVFtTFFPZVU1TjR4MDBDbExuNjBHYnRtVVkyIiwic3ViIjoiajlRbUxRT2VVNU40eDAwQ2xMbjYwR2J0bVVZMiIsImlhdCI6MTczMjk4MTQ1NywiZXhwIjoxNzMyOTg1MDU3LCJlbWFpbCI6ImJ0cmFjay5tYWluQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7Imdvb2dsZS5jb20iOlsiMTA1MTk3MDgwMTIzMzQ1MjEwNjc1Il0sImVtYWlsIjpbImJ0cmFjay5tYWluQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6Imdvb2dsZS5jb20ifX0.iep2oM-UGLsUIazKjUX065EPfuYVJOeCofyWlWDgaKttZbhwCtxxLNGi0nc9aE5HLKQdSB5w_xagtLIh9M0NWfyMd1SKmjo27Anq7i_0HFf2mLH-ig68D3-XTy_zOPvRPuoyvm49r1tchG7ez7f7O5fuhiCNS877nSC-RE_ziq5vqpLTsFKHTznfGeDTa8HkfYq5JXlWg0QpPw3HIbyah1zPmRbeXGJdGoULFxK0ZsPa2w-Ow0S6srUqBDk5r2vyZ64QWBAOZUoChsK-7XZ__wWuQweREe2q1CJFq1OKGqb9zRtMa2Syb8t-FmGfV_m_7bzl2C0V275F4bsHS8O-Ng";
+$zappit_auth_token = "eyJhbGciOiJSUzI1NiIsImtpZCI6IjNmZDA3MmRmYTM4MDU2NzlmMTZmZTQxNzM4YzJhM2FkM2Y5MGIyMTQiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiQiBUcmFjayIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NKUmJ2b05OWGd6dWVmSU81VE13V2ptUjUwa1V0SWFObWtzT1k3OGVlN3U4RHRRVDR3PXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL29uZWxpbmstZGV2ZWxvcGVyIiwiYXVkIjoib25lbGluay1kZXZlbG9wZXIiLCJhdXRoX3RpbWUiOjE3MzI0MzI3NDAsInVzZXJfaWQiOiJqOVFtTFFPZVU1TjR4MDBDbExuNjBHYnRtVVkyIiwic3ViIjoiajlRbUxRT2VVNU40eDAwQ2xMbjYwR2J0bVVZMiIsImlhdCI6MTczMjk4NTEzNywiZXhwIjoxNzMyOTg4NzM3LCJlbWFpbCI6ImJ0cmFjay5tYWluQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7Imdvb2dsZS5jb20iOlsiMTA1MTk3MDgwMTIzMzQ1MjEwNjc1Il0sImVtYWlsIjpbImJ0cmFjay5tYWluQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6Imdvb2dsZS5jb20ifX0.UF7utBGCjoB0ZMHLbfCThPOQ5PmXTHHqXAyQC20LzcCDOfU0Bn5c3bDOM5euGG0rTx7pwpQDnBGO2XQ3jndtdKmFR_tnuZ6YddOfAEEKQm_dtNwcHySzrfn2CJ7xyol5x3CXAJlgvydy9-xCa2NQvaV5ezyOkBI_lyAhmVMwOrTxcF6vPYlFle3EfAGB_BTGqHiJofEmsb_UzGGlg7lZJ-ddocYQmaFw0iyJpR2erWSxboi5_5OrZXaA0EYiwJqyOXzv5kfUFcwW3uDOqiU8oVJfgcVGANi9kEBgYPAuR42gBxNwZvyPkp4Cu62b0zF4E0K5ltf9G43YDvaEtC3ixg";
 
 $plugin_assets_folder = plugin_dir_url(__FILE__) . 'assets';
 
@@ -948,6 +948,8 @@ function display_technical_table($meta_key)
 
         ?>
                 
+            
+
     <?php } ?>
             </tbody>
         </table>
@@ -1065,103 +1067,84 @@ class ServerSidePagination {
 
 
 renderData(items) {
-                // Clear previous content
-                this.containerElement.innerHTML = '';
+    // Clear previous content
+    this.containerElement.innerHTML = '';
 
-                // Handle empty items
-                if (!items || items.length === 0) {
-                    this.containerElement.innerHTML = '<p>No items found.</p>';
-                    return;
-                }
+    // Handle empty items
+    if (!items || items.length === 0) {
+        this.containerElement.innerHTML = '<p>No items found.</p>';
+        return;
+    }
 
-                // Render each item (only for the current page)
-                items.forEach(item => {
-    const rowHTML = `
-        <tr class="bg-white border-t border-gray-200 hover:bg-[#F3F7FD] transition-colors duration-300">
-            <td class="px-6 py-4 text-sm text-gray-800">${item.id}</td>            
-            <td class="px-6 py-4 text-sm text-gray-800">${item.desc}</td>
-            <td class="px-6 py-4">
-                <div class="flex justify-center space-x-2">
-                    <div id="${item.drawer_id}" class="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300">
-                        <div class="bg-white rounded-lg shadow-lg w-full max-w-5xl p-6 relative lg:ml-40">
-                            <!-- Back Button -->
-                            <button id="closeTechnicalDrawer-${item.action_page_id + '-' + item.action_desc_slug}" data-drawer="${item.drawer_id}" class="absolute top-4 left-4 text-gray-600 hover:text-gray-800 flex items-center ml-2 mt-1">
-                                <img src="${item.plugin_assets_folder}/images/arrow_back.png" alt="" class="w-5 h-5">
-                            </button>
-
-                            <!-- Content -->
-                            <div class="px-9 py-4 flex flex-col lg:flex-row gap-8">
-                                <!-- Left Section -->
-                                <div class="flex-1">
-                                    <h2 class="text-xl font-bold text-[#1D1D1D] mb-4">${item.action_desc}</h2>
-                                    <h4 class="text-lg font-medium text-[#1D1D1D] mb-4">Information</h4>
-                                    <div class="space-y-3">
-                                        <div class="flex items-center">
-                                            <strong class="w-32 text-[#717171] text-sm font-medium">URL:</strong>
-                                            <a href="${item.action_url}" class="text-blue-500 underline text-sm">${item.action_url}</a>
-                                        </div>
-                                        <div class="flex items-center">
-                                            <strong class="w-32 text-[#717171] text-sm font-medium">Type:</strong>
-                                            <span class="bg-blue-100 text-blue-500 px-4 py-1 rounded-2xl text-sm flex items-center gap-2 font-medium">
-                                                <div class="rounded-full h-2 w-2 bg-blue-700"></div> ${item.action_type}
-                                            </span>
-                                        </div>
-                                        <div class="flex items-center">
-                                            <strong class="w-32 text-[#717171] text-sm font-medium">Description:</strong>
-                                            <span class="text-sm font-bold">${item.action_desc}</span>
-                                        </div>
-                                        <div class="flex items-center">
-                                            <strong class="w-32 text-[#717171] text-sm font-medium">Status:</strong>
-                                            <span class="font-bold text-sm">${item.action_completed}</span>
-                                        </div>
-                                    </div>
-
-                                    <!-- Tip Section -->
-                                    <div class="flex gap-1 items-center bg-white border rounded-md p-4 shadow-sm mt-3">
-                                        <div class="mr-3">
-                                            <div class="w-6 h-6 flex items-center justify-center rounded-full bg-gray-100 text-black">
-                                                <img src="${item.plugin_assets_folder}/images/tips.png" alt="">
-                                            </div>
-                                        </div>
-                                        <div>
-                                            <h4 class="text-sm font-bold text-gray-700">Helpful Tip</h4>
-                                            <p class="text-sm text-gray-600 mt-1">
-                                                Dukaan provides a straightforward way to manage your robots.txt file, ensuring your websites crawling instructions are accurate and efficient.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Right Section -->
-                                <div class="flex-1">
-                                    <h3 class="text-lg font-semibold text-gray-800 mt-10 mb-4">How to complete this action</h3>
-                                    <ul class="space-y-4 text-sm text-gray-600 border p-5 rounded-lg">
-                                        <li class="flex items-center gap-3">
-                                            <img src="${item.plugin_assets_folder}/images/check.png" alt="">
-                                            Check your hosting resources: Ensure you have enough bandwidth and server capacity.
-                                        </li>
-                                    </ul>
+    // Render each item
+    items.forEach(item => {
+        const rowHTML = `
+            <tr class="bg-white border-t border-gray-200 hover:bg-[#F3F7FD] transition-colors duration-300">
+                <td class="px-6 py-4 text-sm text-gray-800">${item.id}</td>            
+                <td class="px-6 py-4 text-sm text-gray-800">${item.desc}</td>
+                <td class="px-6 py-4">
+                    <div class="flex justify-center space-x-2">
+                        <div id="technicalDrawer-${item.action_page_id}-${item.action_desc_slug}" class="fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300">
+                            <div class="bg-white rounded-lg shadow-lg w-full max-w-5xl p-6 relative lg:ml-40">
+                                <button id="closeTechnicalDrawer-${item.action_page_id}-${item.action_desc_slug}" class="absolute top-4 left-4 text-gray-600 hover:text-gray-800 flex items-center ml-2 mt-1">
+                                    <img src="${item.plugin_assets_folder}/images/arrow_back.png" alt="" class="w-5 h-5">
+                                </button>
+                                <div class="px-9 py-4">
+                                    <h2 class="text-xl font-bold">${item.action_desc}</h2>
+                                    <p>${item.desc}</p>
                                 </div>
                             </div>
                         </div>
+                        <button id="openTechnicalDrawer-${item.action_page_id}-${item.action_desc_slug}" class="border border-blue-500 text-blue-500 px-4 py-2 rounded-lg text-sm hover:bg-blue-100 transition-all duration-300">
+                            View Details
+                        </button>
                     </div>
+                </td>
+            </tr>
+        `;
 
-                    <button id="openTechnicalDrawer-${item.action_page_id + '-' + item.action_desc_slug}" data-drawer="${item.drawer_id}" class="border border-blue-500 text-blue-500 px-4 py-2 rounded-lg text-sm hover:bg-blue-100 transition-all duration-300">
-                        View Details
-                    </button>
-                </div>
-            </td>
-        </tr>
-    `;
+        // Append row to the container
+        this.containerElement.innerHTML += rowHTML;
+    });
 
-    this.containerElement.innerHTML += rowHTML;  // Append each row to the table body
+    // Add event listeners for drawers after all elements are rendered
+    items.forEach(item => {
+        const technicalDrawer = document.getElementById(`technicalDrawer-${item.id}-${item.action_desc_slug}`);
+        const openDrawerButton = document.getElementById(`openTechnicalDrawer-${item.action_page_id}-${item.action_desc_slug}`);
+        const closeDrawerButton = document.getElementById(`closeTechnicalDrawer-${item.action_page_id}-${item.action_desc_slug}`);
 
-    
-    
-});
-            }
+        if (technicalDrawer && openDrawerButton && closeDrawerButton) {
+            // Function to close the drawer
+            const closeDrawer = () => {
+                technicalDrawer.classList.add('opacity-0', 'pointer-events-none');
+            };
 
+            // Open drawer
+            openDrawerButton.addEventListener('click', () => {
+                technicalDrawer.classList.remove('opacity-0', 'pointer-events-none');
+            });
 
+            // Close drawer
+            closeDrawerButton.addEventListener('click', closeDrawer);
+
+            // Close drawer when clicking outside
+            technicalDrawer.addEventListener('click', (event) => {
+                if (event.target === technicalDrawer) {
+                    closeDrawer();
+                }
+            });
+
+            // Close drawer on Escape key
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') {
+                    closeDrawer();
+                }
+            });
+        } else {
+            console.warn('One or more elements are not found for:', item);
+        }
+    });
+}
 
 
   updatePaginationControls(hasMore) {
@@ -1209,7 +1192,7 @@ goToNextPage() {
 document.addEventListener('DOMContentLoaded', () => {
     const paginationInstance = new ServerSidePagination({
         apiUrl: 'https://onelink-developer.spotlightapis.com/getZappitActions',
-        bearerToken: 'eyJhbGciOiJSUzI1NiIsImtpZCI6IjNmZDA3MmRmYTM4MDU2NzlmMTZmZTQxNzM4YzJhM2FkM2Y5MGIyMTQiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiQiBUcmFjayIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NKUmJ2b05OWGd6dWVmSU81VE13V2ptUjUwa1V0SWFObWtzT1k3OGVlN3U4RHRRVDR3PXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL29uZWxpbmstZGV2ZWxvcGVyIiwiYXVkIjoib25lbGluay1kZXZlbG9wZXIiLCJhdXRoX3RpbWUiOjE3MzI0MzI3NDAsInVzZXJfaWQiOiJqOVFtTFFPZVU1TjR4MDBDbExuNjBHYnRtVVkyIiwic3ViIjoiajlRbUxRT2VVNU40eDAwQ2xMbjYwR2J0bVVZMiIsImlhdCI6MTczMjk4MTQ1NywiZXhwIjoxNzMyOTg1MDU3LCJlbWFpbCI6ImJ0cmFjay5tYWluQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7Imdvb2dsZS5jb20iOlsiMTA1MTk3MDgwMTIzMzQ1MjEwNjc1Il0sImVtYWlsIjpbImJ0cmFjay5tYWluQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6Imdvb2dsZS5jb20ifX0.iep2oM-UGLsUIazKjUX065EPfuYVJOeCofyWlWDgaKttZbhwCtxxLNGi0nc9aE5HLKQdSB5w_xagtLIh9M0NWfyMd1SKmjo27Anq7i_0HFf2mLH-ig68D3-XTy_zOPvRPuoyvm49r1tchG7ez7f7O5fuhiCNS877nSC-RE_ziq5vqpLTsFKHTznfGeDTa8HkfYq5JXlWg0QpPw3HIbyah1zPmRbeXGJdGoULFxK0ZsPa2w-Ow0S6srUqBDk5r2vyZ64QWBAOZUoChsK-7XZ__wWuQweREe2q1CJFq1OKGqb9zRtMa2Syb8t-FmGfV_m_7bzl2C0V275F4bsHS8O-Ng',
+        bearerToken: 'eyJhbGciOiJSUzI1NiIsImtpZCI6IjNmZDA3MmRmYTM4MDU2NzlmMTZmZTQxNzM4YzJhM2FkM2Y5MGIyMTQiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiQiBUcmFjayIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NKUmJ2b05OWGd6dWVmSU81VE13V2ptUjUwa1V0SWFObWtzT1k3OGVlN3U4RHRRVDR3PXM5Ni1jIiwiaXNzIjoiaHR0cHM6Ly9zZWN1cmV0b2tlbi5nb29nbGUuY29tL29uZWxpbmstZGV2ZWxvcGVyIiwiYXVkIjoib25lbGluay1kZXZlbG9wZXIiLCJhdXRoX3RpbWUiOjE3MzI0MzI3NDAsInVzZXJfaWQiOiJqOVFtTFFPZVU1TjR4MDBDbExuNjBHYnRtVVkyIiwic3ViIjoiajlRbUxRT2VVNU40eDAwQ2xMbjYwR2J0bVVZMiIsImlhdCI6MTczMjk4NTEzNywiZXhwIjoxNzMyOTg4NzM3LCJlbWFpbCI6ImJ0cmFjay5tYWluQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7Imdvb2dsZS5jb20iOlsiMTA1MTk3MDgwMTIzMzQ1MjEwNjc1Il0sImVtYWlsIjpbImJ0cmFjay5tYWluQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6Imdvb2dsZS5jb20ifX0.UF7utBGCjoB0ZMHLbfCThPOQ5PmXTHHqXAyQC20LzcCDOfU0Bn5c3bDOM5euGG0rTx7pwpQDnBGO2XQ3jndtdKmFR_tnuZ6YddOfAEEKQm_dtNwcHySzrfn2CJ7xyol5x3CXAJlgvydy9-xCa2NQvaV5ezyOkBI_lyAhmVMwOrTxcF6vPYlFle3EfAGB_BTGqHiJofEmsb_UzGGlg7lZJ-ddocYQmaFw0iyJpR2erWSxboi5_5OrZXaA0EYiwJqyOXzv5kfUFcwW3uDOqiU8oVJfgcVGANi9kEBgYPAuR42gBxNwZvyPkp4Cu62b0zF4E0K5ltf9G43YDvaEtC3ixg',
         domainId: 'zappit.ai',
         recommendationType: 'ALL',
         containerElement: document.getElementById('data-container'),
